@@ -5,28 +5,27 @@
         </h2>
     </x-slot>
    <div class="py-12">
-            @if (session('success'))
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
-                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-                        <strong class="font-bold">Success!</strong>
-                        <span class="block sm:inline">{{ session('success') }}</span>
-                    </div>
+        @if (session('success'))
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+                    <strong class="font-bold">Success!</strong>
+                    <span class="block sm:inline">{{ session('success') }}</span>
                 </div>
-            @endif
-            @if ($errors->any())
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
-                    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-                        <strong class="font-bold">Whoops!</strong>
-                        <span class="block sm:inline">There were some problems with your input.</span>
-                        <ul class="list-disc pl-5 mt-3">
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
+            </div>
+        @endif
+        @if ($errors->any())
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                    <strong class="font-bold">Whoops!</strong>
+                    <span class="block sm:inline">There were some problems with your input.</span>
+                    <ul class="list-disc pl-5 mt-3">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
                 </div>
-            @endif
-        </div>
+            </div>
+        @endif
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
             <a href="{{ route('creators.portal') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">Fetch Data</a>
         </div> 

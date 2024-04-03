@@ -5,7 +5,6 @@
                 {{ __('Edit User') }}
             </h2>
             <div>
-                <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a> /
                 <a href="{{ route('users.index') }}" class="text-sm text-gray-700 underline">User Management</a> /
                 <span class="text-sm text-gray-500">Edit User</span>
             </div>

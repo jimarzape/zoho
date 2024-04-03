@@ -15,12 +15,12 @@
                     <x-nav-link :href="route('dashboard.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('crm.index')" :active="request()->routeIs('crm.*')">
+                    {{-- <x-nav-link :href="route('crm.index')" :active="request()->routeIs('crm.*')">
                         {{ __('Zoho CRM') }}
                     </x-nav-link>
                     <x-nav-link :href="route('analytics.index')" :active="request()->routeIs('analytics.*')">
                         {{ __('Zoho Analytics') }}
-                    </x-nav-link>
+                    </x-nav-link> --}}
                     <x-nav-link :href="route('creators.index')" :active="request()->routeIs('creators.*')">
                         {{ __('Zoho Creators') }}
                     </x-nav-link>
