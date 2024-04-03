@@ -40,10 +40,10 @@
                                     {{ $project->status }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    {{ $project->start_date }}
+                                    {{ date('M d, Y',strtotime($project->start_date)) }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    {{ $project->end_date }}
+                                    {{ date('M d, Y',strtotime($project->end_date)) }}
                                 </td>
                                 <!-- Add more <td> elements as needed for each row -->
                                 <!-- ... -->

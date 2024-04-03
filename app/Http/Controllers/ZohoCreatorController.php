@@ -173,7 +173,6 @@ class ZohoCreatorController extends Controller
         $config = $this->getConfig($project);
         $tasks = $this->zohoservice->getTasksForProject($config);
 
-        $internal_hours_approver        = '';
         $customer_hours_approver_arr    = [];
         $total_billable_hours           = 0;
         $total_non_billable_hours       = 0;
@@ -253,7 +252,7 @@ class ZohoCreatorController extends Controller
                 'project_id'                => $project->id, // Check for the existing record using account_id
             ],
             [
-                'internal_hours_approver'   => $internal_hours_approver,
+                'internal_hours_approver'   => $project->owner_email,
                 'customer_hours_approver'   => implode(',', $customer_hours_approver_arr),
                 'project_name'              => $project->name,
                 'total_billable_hours'      => $total_billable_hours,

@@ -11,7 +11,7 @@
 
     <div class="py-12">
         
-         <div class="max-w-4xl mx-auto p-5">
+         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
             <div class="bg-white shadow rounded-lg p-6">
                 <div class="mb-5">
                     <h2 class="text-lg font-semibold">Sales Overview</h2>
